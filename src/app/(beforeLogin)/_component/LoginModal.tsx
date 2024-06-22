@@ -1,14 +1,18 @@
 "use client";
 
-import style from '@/app/(beforeLogin)/@modal/i/flow/login/login.module.css';
+import style from './login.module.css';
 import {useState} from "react";
+import {useRouter} from "next/navigation";
 
 export default function LoginModal() {
   const [id, setId] = useState();
   const [password, setPassword] = useState();
   const [message, setMessage] = useState();
+  const router = useRouter();
   const onSubmit = () => {};
-  const onClickClose = () => {};
+  const onClickClose = () => {
+    router.back();
+  };
 
   const onChangeId = () => {};
 
