@@ -1,14 +1,12 @@
 "use client";
 
-import {useRouter} from "next/navigation";
 import styles from "@/app/(beforeLogin)/_component/main.module.css";
 import Image from "next/image";
 import zLogo from "../../../../public/zlogo.png";
 import Link from "next/link";
 
 export default function Main() {
-    const router = useRouter();
-    router.replace('/i/flow/login');
+
     return (
         <div className={styles.container}>
             <div className={styles.left}>
